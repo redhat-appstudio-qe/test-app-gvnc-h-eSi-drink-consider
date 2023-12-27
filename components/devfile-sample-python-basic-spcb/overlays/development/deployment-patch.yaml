@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-spcb
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-dxpw-tenant/test-app-gvnc/devfile-sample-python-basic-spcb@sha256:8e18c794eb8ca82cfd334fbddb709bd9029b650ebc4aff422803002affac0afa
+        name: my-python
+        resources: {}
+status: {}
